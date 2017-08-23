@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#C62828</color>
+    <color name="colorAccent">#FFEB3B</color>
+
+
+    <color name="warnaBackground">#fafafa</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="merah">#ff0000</color>
+
+    <color name="warnabaris">#ffbfbf</color>
+
+    <color name="kuning">#FFEB3B</color>
+    <color name="hijau">#4CAF50</color>
+    <color name="biru">#2196F3</color>
+    <color name="oranye">#FF9800</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+</resources>

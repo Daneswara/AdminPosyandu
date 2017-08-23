@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.masbie.adminposyandu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RiwayatAnak"
+            android:label="@string/title_activity_detail_anak"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DetailRiwayat" />
+        <activity android:name=".DetailProfilAnak" />
+        <activity android:name=".TambahRiwayat" />
+        <activity android:name=".TambahAnak" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity android:name=".Grafik" />
+        <activity android:name=".GrafikTinggi" />
+        <activity android:name=".sendsms" />
+        <activity android:name=".GrafikP" />
+        <activity android:name=".GrafikTinggiP" />
+        <activity android:name=".KirimNotifikasiKebeberapa" />
+        <activity android:name=".TambahPetugas" />
+        <activity android:name=".EditAkun" />
+        <activity android:name=".KirimKeWA" />
+        <activity android:name=".EditPetugas" />
+        <activity android:name=".Profil" />
+        <activity android:name=".pengaturan.PengaturanGrafikBeratL" />
+        <activity android:name=".pengaturan.PengaturanGrafikBeratP" />
+        <activity android:name=".pengaturan.PengaturanGrafikTinggiL" />
+        <activity android:name=".EditGrafikBeratL" />
+        <activity android:name=".EditGrafikBeratP" />
+        <activity android:name=".EditGrafikTinggiL" />
+        <activity android:name=".EditGrafikTinggiP" />
+        <activity android:name=".pengaturan.PengaturanGrafikTinggiP" />
+        <activity android:name=".TambahBeratL" />
+        <activity android:name=".TambahBeratP" />
+        <activity android:name=".TambahTinggiL" />
+        <activity android:name=".TambahTinggiP"></activity>
+    </application>
+
+</manifest>

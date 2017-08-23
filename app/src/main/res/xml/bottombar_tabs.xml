@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_anak"
+        icon="@drawable/ic_child_care"
+        title="Anak"
+        barColorWhenSelected="@color/colorPrimary"/>
+    <tab
+        id="@+id/tab_riwayat"
+        icon="@drawable/ic_description"
+        title="Riwayat"
+        barColorWhenSelected="@color/colorPrimary"/>
+    <tab
+        id="@+id/tab_statistik"
+        icon="@drawable/ic_show_chart"
+        title="Grafik"
+        barColorWhenSelected="@color/colorPrimary"/>
+    <tab
+        id="@+id/tab_petugas"
+        icon="@drawable/ic_people"
+        title="Petugas"
+        barColorWhenSelected="@color/colorPrimary"/>
+    <tab
+        id="@+id/tab_akun"
+        icon="@drawable/ic_access_time"
+        title="Notifikasi"
+        barColorWhenSelected="@color/colorPrimary"/>
+</tabs>

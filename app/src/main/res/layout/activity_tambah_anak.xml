@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profil_anak"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.masbie.adminposyandu.TambahAnak">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Nomer Telp"
+                android:id="@+id/telp"
+                android:inputType="number"
+                android:text="" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/nama"
+                android:hint="Nama"
+                android:inputType="textMultiLine"
+                android:text="" />
+
+            <RadioGroup
+                android:id="@+id/jeniskelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/laki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki" />
+
+                <RadioButton
+                    android:id="@+id/perempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/tanggalahir"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Tanggal Lahir"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/anakke"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:hint="Anak Ke-"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/berat"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Berat Lahir"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/ayah"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:hint="Nama Ayah"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/ibu"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:hint="Nama Ibu"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:hint="Alamat Orang Tua"
+                android:text="" />
+
+            <Button
+                android:id="@+id/tambah"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:text="Tambah"
+                android:textColor="@color/putih" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
