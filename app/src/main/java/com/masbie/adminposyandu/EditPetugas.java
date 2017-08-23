@@ -89,8 +89,8 @@ public class EditPetugas extends AppCompatActivity {
         String input_password = password.getText().toString();
         String input_nama = nama.getText().toString();
 
-        if (input_username.isEmpty()) {
-            username.setError("Username harus di isi");
+        if (input_username.isEmpty() || input_username.length() < 11 || input_username.length() > 12) {
+            username.setError("Telp harus di isi, 11-12 digit");
             valid = false;
         } else {
             username.setError(null);

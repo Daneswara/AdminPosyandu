@@ -62,8 +62,8 @@ public class TambahPetugas extends AppCompatActivity {
         String pass = input_password.getText().toString();
         String nama = input_nama.getText().toString();
 
-        if (user.isEmpty()) {
-            input_username.setError("Username harus di isi");
+        if (user.isEmpty() || user.length() < 11 || user.length() > 12) {
+            input_username.setError("Telp harus di isi, 11-12 digit");
             valid = false;
         } else {
             input_username.setError(null);

@@ -221,8 +221,8 @@ public class DetailProfilAnak extends AppCompatActivity implements com.wdullaer.
         } else {
             textNama.setError(null);
         }
-        if (telp.isEmpty()) {
-            textTelp.setError("Isikan nomer telp orang tua dari anak");
+        if (telp.isEmpty() || telp.length() < 11 || telp.length() > 12) {
+            textTelp.setError("Isikan nomer telp 11-12 digit");
             valid = false;
         } else {
             textTelp.setError(null);

@@ -175,8 +175,8 @@ public class TambahAnak extends AppCompatActivity implements com.wdullaer.materi
         } else {
             input_nama.setError(null);
         }
-        if (telp.isEmpty()) {
-            input_telp.setError("Isikan nomer telp orang tua dari anak");
+        if (telp.isEmpty() || telp.length() < 11 || telp.length() > 12) {
+            input_telp.setError("Isikan nomer telp 11-12 digit");
             valid = false;
         } else {
             input_telp.setError(null);
