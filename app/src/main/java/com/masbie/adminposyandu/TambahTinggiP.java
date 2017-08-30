@@ -168,7 +168,7 @@ public class TambahTinggiP extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/insert_tinggi_p.php");
+                        "http://posyanduanak.com/kenanga/insert_tinggi_p.php");
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);

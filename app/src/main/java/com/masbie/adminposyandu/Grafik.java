@@ -60,7 +60,7 @@ public class Grafik extends AppCompatActivity {
         return hasil;
     }
 
-    public static String url = "http://posyanduanak.com/mawar/view.php?listgrafik=1";
+    public static String url = "http://posyanduanak.com/kenanga/view.php?listgrafik=1";
     public static final String JSON_ARRAY = "result";
     ProgressDialog progressDialog;
 

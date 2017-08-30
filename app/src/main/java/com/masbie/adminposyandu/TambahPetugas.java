@@ -120,7 +120,7 @@ public class TambahPetugas extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/insert_petugas.php");
+                        "http://posyanduanak.com/kenanga/insert_petugas.php");
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);

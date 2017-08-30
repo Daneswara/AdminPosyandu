@@ -81,7 +81,7 @@ public class DetailProfilAnak extends AppCompatActivity implements com.wdullaer.
         textAnakke.setText(anakke);
 
         Button simpan = (Button) findViewById(R.id.simpan);
-        Button hapus = (Button) findViewById(R.id.delete);
+//        Button hapus = (Button) findViewById(R.id.delete);
         simpan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -96,31 +96,31 @@ public class DetailProfilAnak extends AppCompatActivity implements com.wdullaer.
             }
         });
 
-        hapus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new SweetAlertDialog(DetailProfilAnak.this, SweetAlertDialog.WARNING_TYPE)
-                        .setTitleText("Apakah anda yakin?")
-                        .setContentText("Anda tidak dapat mengembalikan data yang telah dihapus")
-                        .setCancelText("Batal")
-                        .setConfirmText("Iya")
-                        .showCancelButton(true)
-                        .setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
-                            @Override
-                            public void onClick(SweetAlertDialog sDialog) {
-                                sDialog.cancel();
-                            }
-                        })
-                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
-                            @Override
-                            public void onClick(SweetAlertDialog sweetAlertDialog) {
-                                new HapusAnak(id).execute();
-                                sweetAlertDialog.dismiss();
-                            }
-                        })
-                        .show();
-            }
-        });
+//        hapus.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                new SweetAlertDialog(DetailProfilAnak.this, SweetAlertDialog.WARNING_TYPE)
+//                        .setTitleText("Apakah anda yakin?")
+//                        .setContentText("Anda tidak dapat mengembalikan data yang telah dihapus")
+//                        .setCancelText("Batal")
+//                        .setConfirmText("Iya")
+//                        .showCancelButton(true)
+//                        .setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+//                            @Override
+//                            public void onClick(SweetAlertDialog sDialog) {
+//                                sDialog.cancel();
+//                            }
+//                        })
+//                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+//                            @Override
+//                            public void onClick(SweetAlertDialog sweetAlertDialog) {
+//                                new HapusAnak(id).execute();
+//                                sweetAlertDialog.dismiss();
+//                            }
+//                        })
+//                        .show();
+//            }
+//        });
 
         textTTL.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -288,7 +288,7 @@ public class DetailProfilAnak extends AppCompatActivity implements com.wdullaer.
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/edit_anak.php?id=" + id);
+                        "http://posyanduanak.com/kenanga/edit_anak.php?id=" + id);
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);
@@ -347,7 +347,7 @@ public class DetailProfilAnak extends AppCompatActivity implements com.wdullaer.
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/delete_anak.php?id=" + id);
+                        "http://posyanduanak.com/kenanga/delete_anak.php?id=" + id);
 
                 HttpResponse response = httpClient.execute(httpPost);
 

@@ -186,7 +186,7 @@ public class sendsms extends AppCompatActivity {
 
     }
 
-    public static final String url = "http://posyanduanak.com/mawar/view.php?telpon=1";
+    public static final String url = "http://posyanduanak.com/kenanga/view.php?telpon=1";
     public static final String JSON_ARRAY = "result";
 
     public void localAdminList() {
@@ -271,7 +271,7 @@ public class sendsms extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/insert_notifikasi.php");
+                        "http://posyanduanak.com/kenanga/insert_notifikasi.php");
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);

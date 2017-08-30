@@ -64,7 +64,7 @@ public class PengaturanGrafikBeratP extends AppCompatActivity {
         }
 
     }
-    public static final String url = "http://posyanduanak.com/mawar/view.php?grafik=2";
+    public static final String url = "http://posyanduanak.com/kenanga/view.php?grafik=2";
     public static final String JSON_ARRAY = "result";
     ProgressDialog progressDialog;
     public void localAdminList() {

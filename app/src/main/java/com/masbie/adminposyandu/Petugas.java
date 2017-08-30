@@ -131,7 +131,7 @@ public class Petugas extends Fragment {
     }
 
     ProgressDialog progressDialog;
-    public static String url = "http://posyanduanak.com/mawar/view.php?petugas=1";
+    public static String url = "http://posyanduanak.com/kenanga/view.php?petugas=1";
     public static final String JSON_ARRAY = "result";
 
     @Override

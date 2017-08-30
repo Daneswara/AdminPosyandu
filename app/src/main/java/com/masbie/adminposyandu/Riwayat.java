@@ -66,7 +66,7 @@ public class Riwayat extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    public static final String url = "http://posyanduanak.com/mawar/view.php?riwayat=1";
+    public static final String url = "http://posyanduanak.com/kenanga/view.php?riwayat=1";
     public static final String JSON_ARRAY = "result";
 
 

@@ -63,7 +63,7 @@ public class PengaturanGrafikTinggiP extends AppCompatActivity {
             });
         }
     }
-    public static final String url = "http://posyanduanak.com/mawar/view.php?grafik=4";
+    public static final String url = "http://posyanduanak.com/kenanga/view.php?grafik=4";
     public static final String JSON_ARRAY = "result";
     ProgressDialog progressDialog;
 

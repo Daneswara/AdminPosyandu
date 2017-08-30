@@ -178,7 +178,7 @@ public class Notifikasi extends Fragment {
         progressDialog.setMessage("Load Data...");
         progressDialog.show();
         petugas = petugas.replace(" ", "%20");
-        url = "http://posyanduanak.com/mawar/view.php?notifikasi="+petugas;
+        url = "http://posyanduanak.com/kenanga/view.php?notifikasi="+petugas;
         localAdminList();
     }
 

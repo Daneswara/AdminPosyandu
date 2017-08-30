@@ -20,11 +20,16 @@ public class AdapterPetugas extends BaseAdapter {
     public String[] pelajaran;
     public String[] mThumbIds;
     public String[] username;
+    public String[] id;
     // Constructor
     public AdapterPetugas(Context c, String[] nama, String[] id, String[] username) {
         mContext = c;
         this.pelajaran = nama;
-        mThumbIds = id;
+        mThumbIds = new String[nama.length];
+        for (int i = 0; i < nama.length; i++) {
+            mThumbIds[i] = (nama[i]).toUpperCase().charAt(0) + "";
+        }
+        this.id = id;
         this.username = username;
     }
 
@@ -68,7 +73,7 @@ public class AdapterPetugas extends BaseAdapter {
                     Intent intent = new Intent(mContext, EditPetugas.class);
                     intent.putExtra("nama", pelajaran[position]);
                     intent.putExtra("username", username[position]);
-                    intent.putExtra("id", mThumbIds[position]);
+                    intent.putExtra("id", id[position]);
                     mContext.startActivity(intent);
                 }
             });

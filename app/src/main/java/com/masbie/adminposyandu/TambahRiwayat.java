@@ -136,7 +136,7 @@ public class TambahRiwayat extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/insert_riwayat.php");
+                        "http://posyanduanak.com/kenanga/insert_riwayat.php");
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);

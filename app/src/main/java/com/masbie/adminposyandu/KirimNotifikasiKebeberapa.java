@@ -205,7 +205,7 @@ public class KirimNotifikasiKebeberapa extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/insert_notifikasi.php");
+                        "http://posyanduanak.com/kenanga/insert_notifikasi.php");
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);

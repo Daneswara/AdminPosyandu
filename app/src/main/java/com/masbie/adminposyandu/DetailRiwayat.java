@@ -243,7 +243,7 @@ public class DetailRiwayat extends AppCompatActivity implements com.wdullaer.mat
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/edit_riwayat.php?id=" + id);
+                        "http://posyanduanak.com/kenanga/edit_riwayat.php?id=" + id);
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);

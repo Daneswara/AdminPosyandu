@@ -260,12 +260,12 @@
                 android:text="Simpan"
                 android:textColor="@color/putih" />
 
-            <Button
-                android:id="@+id/delete"
-                android:layout_marginTop="15dp"
-                android:background="@color/colorPrimaryDark"
-                android:text="Delete"
-                android:textColor="@color/putih" />
+            <!--<Button-->
+                <!--android:id="@+id/delete"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:background="@color/colorPrimaryDark"-->
+                <!--android:text="Delete"-->
+                <!--android:textColor="@color/putih" />-->
 
         </TableLayout>
     </ScrollView>

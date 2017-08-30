@@ -210,7 +210,7 @@ public class EditGrafikBeratL extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/edit_berat_l.php?bulan=" + bulan);
+                        "http://posyanduanak.com/kenanga/edit_berat_l.php?bulan=" + bulan);
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);
@@ -268,7 +268,7 @@ public class EditGrafikBeratL extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/delete_berat_l.php?bulan=" + id);
+                        "http://posyanduanak.com/kenanga/delete_berat_l.php?bulan=" + id);
 
                 HttpResponse response = httpClient.execute(httpPost);
 
@@ -303,7 +303,7 @@ public class EditGrafikBeratL extends AppCompatActivity {
 
     public void localAdminList() {
 
-        url = "http://posyanduanak.com/mawar/view.php?detailgrafik=1&bulan=" + bulan;
+        url = "http://posyanduanak.com/kenanga/view.php?detailgrafik=1&bulan=" + bulan;
         StringRequest stringRequest = new StringRequest(url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

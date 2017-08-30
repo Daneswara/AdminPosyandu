@@ -163,7 +163,7 @@ public class Anak extends Fragment {
         }
     }
 
-    public static final String url = "http://posyanduanak.com/mawar/view.php?anak=1";
+    public static final String url = "http://posyanduanak.com/kenanga/view.php?anak=1";
     public static final String JSON_ARRAY = "result";
 
     public void localAdminList() {

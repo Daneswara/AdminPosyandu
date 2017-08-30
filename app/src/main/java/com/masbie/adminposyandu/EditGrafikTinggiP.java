@@ -206,7 +206,7 @@ public class EditGrafikTinggiP extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/edit_tinggi_p.php?bulan=" + bulan);
+                        "http://posyanduanak.com/kenanga/edit_tinggi_p.php?bulan=" + bulan);
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);
@@ -264,7 +264,7 @@ public class EditGrafikTinggiP extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/delete_tinggi_p.php?bulan=" + id);
+                        "http://posyanduanak.com/kenanga/delete_tinggi_p.php?bulan=" + id);
 
                 HttpResponse response = httpClient.execute(httpPost);
 
@@ -298,7 +298,7 @@ public class EditGrafikTinggiP extends AppCompatActivity {
     ProgressDialog progressDialog;
 
     public void localAdminList() {
-        url = "http://posyanduanak.com/mawar/view.php?detailgrafik=4&bulan=" + bulan;
+        url = "http://posyanduanak.com/kenanga/view.php?detailgrafik=4&bulan=" + bulan;
 
         StringRequest stringRequest = new StringRequest(url, new Response.Listener<String>() {
             @Override

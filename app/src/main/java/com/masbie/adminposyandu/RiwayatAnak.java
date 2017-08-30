@@ -41,7 +41,7 @@ public class RiwayatAnak extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         String id = getIntent().getExtras().getString("id");
-        url = "http://posyanduanak.com/mawar/view.php?riwayatanak=" + id;
+        url = "http://posyanduanak.com/kenanga/view.php?riwayatanak=" + id;
         String nama = getIntent().getExtras().getString("nama");
         setTitle("Profil " + nama);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

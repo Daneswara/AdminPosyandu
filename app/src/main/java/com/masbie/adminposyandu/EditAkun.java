@@ -128,7 +128,7 @@ public class EditAkun extends AppCompatActivity {
             try {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(
-                        "http://posyanduanak.com/mawar/edit_akun_admin.php?id=" + id);
+                        "http://posyanduanak.com/kenanga/edit_akun_admin.php?id=" + id);
                 httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                 HttpResponse response = httpClient.execute(httpPost);
